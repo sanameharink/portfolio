@@ -1,122 +1,179 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
+      <nav className="navbar">
+        <h2>Sana Meharin K</h2>
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section id="home" className="hero">
+        <h1>Hello, I'm Sana Meharin 👋</h1>
+
+        <h2>Computer Science Undergraduate</h2>
+
+        <p>
+          Aspiring Full Stack Python Developer passionate about building
+          responsive web applications using Python, Django, React and MySQL.
+        </p>
+
+        <button>View Projects</button>
       </section>
+      <section id="about" className="section">
+  <h2>About Me</h2>
 
-      <div className="ticks"></div>
+  <p>
+    I am a Computer Science undergraduate passionate about
+    Full Stack Web Development and Python programming.
+    I enjoy building responsive web applications,
+    learning new technologies, and solving real-world problems.
+  </p>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+  <p>
+    My goal is to become a skilled Software Engineer and
+    contribute to innovative projects using modern technologies.
+  </p>
+</section>
+<section id="skills" className="section">
+  <h2>Skills</h2>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+  <div className="skills-grid">
+    <div className="skill-card">Python</div>
+    <div className="skill-card">Django</div>
+    <div className="skill-card">React</div>
+    <div className="skill-card">Java</div>
+    <div className="skill-card">HTML5</div>
+    <div className="skill-card">CSS3</div>
+    <div className="skill-card">JavaScript</div>
+    <div className="skill-card">MySQL</div>
+    <div className="skill-card">Git</div>
+    <div className="skill-card">GitHub</div>
+    <div className="skill-card">VS Code</div>
+    <div className="skill-card">Problem Solving</div>
+  </div>
+</section>
+<section id="projects" className="section">
+  <h2>Projects</h2>
+
+  <div className="projects-grid">
+
+    <div className="project-card">
+      <h3>🌦 Weather Forecast App</h3>
+      <p>
+        Developed a weather forecasting web application using
+        Python, Django, HTML, CSS, and a Weather API.
+      </p>
+    </div>
+
+    <div className="project-card">
+      <h3>⚖ BMI Calculator</h3>
+      <p>
+        Built a Java-based BMI Calculator with a graphical user
+        interface to calculate BMI and display health categories.
+      </p>
+    </div>
+
+    <div className="project-card">
+  <h3>🌐 Personal Portfolio</h3>
+  <p>
+    Developed a responsive personal portfolio using React and Vite
+    to showcase my skills, projects, education, and experience with
+    a modern gradient design.
+  </p>
+</div>
+
+    <div className="project-card">
+      <h3>💼 Portfolio Website</h3>
+      <p>
+        Designed and developed a responsive personal portfolio
+        using React and Vite.
+      </p>
+    </div>
+
+  </div>
+</section>
+<section id="education" className="section">
+  <h2>Education</h2>
+
+  <div className="project-card">
+    <h3>B.Tech in Computer Science & Engineering</h3>
+    <p>
+      MGM College of Engineering and Technology<br />
+      2024 – 2028
+    </p>
+  </div>
+</section>
+
+<section id="experience" className="section">
+  <h2>Experience</h2>
+
+  <div className="project-card">
+    <h3>Full Stack Development Intern</h3>
+    <p>
+      Stem Robotics | June 2026<br /><br />
+
+      • Developed web applications using Django.<br />
+      • Worked in a team environment.<br />
+      • Gained hands-on experience in full-stack development.
+    </p>
+  </div>
+
+  <div className="project-card">
+    <h3>Leadership & Activities</h3>
+    <p>
+      • Women Entrepreneurship Lead – IEDC<br />
+      • Student Lead – Etcetera Coding Club<br />
+      • NSS Volunteer
+    </p>
+  </div>
+</section>
+<section id="contact" className="section">
+  <h2>Contact Me</h2>
+
+  <div className="contact-card">
+    <p><strong>Email:</strong> sanameharink@gmail.com</p>
+
+    <p>
+      <strong>GitHub:</strong>
+      <br />
+      <a
+        href="https://github.com/sanameharink"
+        target="_blank"
+        rel="noreferrer"
+      >
+        github.com/sanameharink
+      </a>
+    </p>
+
+    <p>
+      <strong>LinkedIn:</strong>
+      <br />
+      <a
+        href="https://www.linkedin.com/in/sana-meharin-k-436290334"
+        target="_blank"
+        rel="noreferrer"
+      >
+        LinkedIn Profile
+      </a>
+    </p>
+  </div>
+</section>
+
+<footer className="footer">
+  <p>© 2026 Sana Meharin K | Built with React & Vite ❤️</p>
+</footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
